@@ -1,0 +1,24 @@
+{
+  "name": "project-swp302",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-sever"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhamNgocThien18/ProjectSWP.git"
+  },
+  "author": "PhamNgocThien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhamNgocThien18/ProjectSWP/issues"
+  },
+  "homepage": "https://github.com/PhamNgocThien18/ProjectSWP#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
