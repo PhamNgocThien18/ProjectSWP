@@ -1,13 +1,15 @@
 .navbar{
-    background-color: #4a5459;
+    background-color: black;
 }
-.product{
-    margin-top: 5%;
+.navbar{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .product h2 {
-    text-align: center;
+    
     display:inline-block ;
-    margin-bottom: 5%;
+    padding: 30px 0px;
 }
 .product ul{
     list-style: none;
@@ -15,4 +17,41 @@
 .product li{
     box-sizing: border-box;
     margin-bottom: 3%;
+}
+#Navbar a{
+    display: block;
+    padding: 18px 20px;
+    font-size: 30px;
+}
+.navbar-top{
+    position: relative;
+}
+.product{
+    position: relative;
+}
+.product-item{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.product-list .row{
+    padding-left: 0;
+}
+footer h2{
+    padding: 30px 0px;
+}
+.menu{
+    list-style: none;
+}
+.left-menu li{
+    list-style: none;
+}
+.left-menu a{
+    text-decoration: none;
+    display: block;
+    padding: 20px 0;
+}
+.menu h2{
+    
+    padding: 30px 0px;
 }
