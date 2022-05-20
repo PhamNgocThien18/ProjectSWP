@@ -1,3 +1,4 @@
+/* Quy ước chung font-size 18px của nội dung và tiêu đề sẽ là thẻ h2 */
 /* page chung */
 .navbar{
     background-color: black;
@@ -7,6 +8,10 @@
     max-width: 100%;
     height: auto;
 }
+.navbar-top p{
+    font-size: 30px;
+    padding-top: 20px;
+}
 footer h2{
     padding: 30px 0px;
 }
@@ -14,6 +19,22 @@ footer h2{
     display: block;
     padding: 18px 20px;
     font-size: 30px;
+}
+
+#search-box{
+    margin-top: 10px;
+}
+#search-btn{
+    border: none;
+    padding: 3px 10px;
+    background: none;
+    color: white;
+}
+#search-box #search-text{
+    border: none;
+    background: #f3f3f3;
+    padding: 3px 60px;
+    border-radius: 5px;
 }
 /* end */
 
@@ -37,8 +58,50 @@ footer h2{
     margin-right: auto;
     padding: 0;
 }
-.product-list .row{
+.product-img{
+    position: relative;
+    overflow: hidden;
+}
+.product-top .row{
     padding-left: 0;
+}
+li form{
+    padding: 18px 20px;
+}
+.product-info{
+    padding: 10px 0px;
+}
+.product a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+}
+.product .product-directory {
+    font-size: 13px;
+}
+.product .product-name{
+    text-align: center;
+}
+.product .product-price{
+    text-align: center;
+    font-weight: 600;
+}
+.product .buy-now{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: red;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -47px;
+    transition: 0.25s ease-in-out;
+}
+ul.row li:hover a.buy-now{
+    bottom: 0px;
+}
+ul.row li:hover .product-img img{
+    filter: opacity(80%);
 }
 /* end */
 
@@ -57,7 +120,49 @@ footer h2{
    
 }
 .menu h2{
-    
     padding: 30px 0px;
 }
+.menu a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.menu .product-info{
+    padding: 10px 0px;
+}
+
+.menu .product-directory {
+    font-size: 13px;
+}
+.menu .product-name{
+    text-align: center;
+}
+.menu .product-price{
+    text-align: center;
+    font-weight: 600;
+}
+
+.menu .li {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.menu .buy-now{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: red;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -47px;
+    transition: 0.25s ease-in-out;
+}
+ li:hover a.buy-now{
+    bottom: 0px;
+}
+li:hover .product-img img{
+    filter: opacity(80%);
+}
+
+
 /* end */
