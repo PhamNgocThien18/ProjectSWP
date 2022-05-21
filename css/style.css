@@ -51,7 +51,7 @@ footer h2{
     margin-bottom: 30px;
 }
 .product{
-    position: relative;
+    /* position: relative; */
 }
 .product-item{
     margin-left: auto;
@@ -109,16 +109,32 @@ ul.row li:hover .product-img img{
 .menu{
     list-style: none;
 }
-.left-menu li{
+.left-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.left-menu  li{
     box-sizing: border-box;
     list-style: none;
-    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+    border: black solid 2px;
+    border-radius: 5px;
+    background-color: red;    
 }
 .left-menu a{
     text-decoration: none;
     display: block;
-   
 }
+.left-menu ul li a {
+    color: white;
+}
+.right-menu li{
+    list-style: none;
+    margin-bottom: 30px;
+}  
 .menu h2{
     padding: 30px 0px;
 }
@@ -141,11 +157,6 @@ ul.row li:hover .product-img img{
     text-align: center;
     font-weight: 600;
 }
-
-.menu .li {
-    box-sizing: border-box;
-    margin-bottom: 30px;
-}
 .menu .buy-now{
     text-align: center;
     text-transform: uppercase;
@@ -163,6 +174,33 @@ ul.row li:hover .product-img img{
 li:hover .product-img img{
     filter: opacity(80%);
 }
-
-
+.left-menu ul li{
+    position: relative;
+    
+}
+.left-menu .sub-menu {
+    position: absolute;
+    top: -2px;
+    left: 195px;
+    display: none;
+}
+.left-menu ul li:hover .sub-menu{
+    display: block;
+}
+.left-menu>ul>li:hover {
+    background-color: black;
+}
+.sub-menu li a {
+    padding: 0px 20px;
+}
+.sub-menu li{
+    box-sizing: border-box;
+    list-style: none;
+    text-align: center;
+    padding: 3px 45px;
+    margin-bottom: 10px;
+    border: black solid 2px;
+    border-radius: 5px;
+    background-color: red; 
+}
 /* end */
