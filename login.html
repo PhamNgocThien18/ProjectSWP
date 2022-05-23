@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../ProjectSWP/css/login.css" />
+  </head>
+  <body>
+    <div class="signin">
+      <h1 class="signin-heading">Sign In</h1>
+
+      <!-- Button Google -->
+      <div id="signin-social"></div>
+
+      <!-- Dropdown -->
+      <div class="selectdiv">
+        <label>
+            <select>
+                <option selected> Select Campus </option>
+                <option>FU - Hòa Lạcc</option>
+                <option>FU - Hồ Chí Minh</option>
+                <option>FU - Đà Nẵng</option>
+                <option>FU - Cần Thơ</option>
+                <option>FU - Quy Nhơn</option>
+            </select>
+        </label>
+      </div>
+    </div>
+     <script>
+        function onSuccess(googleUser) {
+          console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+        function onFailure(error) {
+          console.log(error);
+        }
+        function renderButton() {
+          gapi.signin2.render('signin-social', {
+            'scope': 'profile email',
+            'width': 240,
+            'height': 50,
+            'longtitle': true,
+            'theme': 'dark',
+            'onsuccess': onSuccess,
+            'onfailure': onFailure
+          });
+        }
+      </script>
+       <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  </body>
+</html>
