@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <meta
+      name="google-signin-client_id"
+      content="YOUR_CLIENT_ID.apps.googleusercontent.com"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
     />
@@ -15,45 +18,80 @@
     <link rel="stylesheet" href="../ProjectSWP/css/login.css" />
   </head>
   <body>
-    <div class="signin">
-      <h1 class="signin-heading">Sign In</h1>
+    <div class="signin col-6">
+      <fieldset>
+        <legend>
+          <h1 class="signin-heading">Login User</h1>
 
-      <!-- Button Google -->
-      <div id="signin-social"></div>
-
-      <!-- Dropdown -->
-      <div class="selectdiv">
-        <label>
-            <select>
-                <option selected> Select Campus </option>
+          <!-- Button Google -->
+          <div id="signin-social"></div>
+          <!-- Dropdown -->
+          <div class="selectdiv">
+            <label>
+              <select>
+                <option selected>Select Campus</option>
                 <option>FU - Hòa Lạcc</option>
                 <option>FU - Hồ Chí Minh</option>
                 <option>FU - Đà Nẵng</option>
                 <option>FU - Cần Thơ</option>
                 <option>FU - Quy Nhơn</option>
-            </select>
-        </label>
+              </select>
+            </label>
+          </div>
+        </legend>
+      </fieldset>
+    </div>
+    
+    <!-- Login Admin -->
+    <div class="sigin-1 col-6">
+      <div class="login-box">
+        <h2>Login Admin</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>User</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div>
+            <a href="#">
+              <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+              </button>
+        </form>
       </div>
     </div>
-     <script>
-        function onSuccess(googleUser) {
-          console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-        }
-        function onFailure(error) {
-          console.log(error);
-        }
-        function renderButton() {
-          gapi.signin2.render('signin-social', {
-            'scope': 'profile email',
-            'width': 240,
-            'height': 50,
-            'longtitle': true,
-            'theme': 'dark',
-            'onsuccess': onSuccess,
-            'onfailure': onFailure
-          });
-        }
-      </script>
-       <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+    <script>
+      function onSuccess(googleUser) {
+        console.log("Logged in as: " + googleUser.getBasicProfile().getName());
+      }
+      function onFailure(error) {
+        console.log(error);
+      }
+      function renderButton() {
+        gapi.signin2.render("signin-social", {
+          scope: "profile email",
+          width: 240,
+          height: 50,
+          longtitle: true,
+          theme: "dark",
+          onsuccess: onSuccess,
+          onfailure: onFailure,
+        });
+      }
+    </script>
+    <script
+      src="https://apis.google.com/js/platform.js?onload=renderButton"
+      async
+      defer
+    ></script>
   </body>
 </html>
