@@ -25,25 +25,193 @@
     <div class="navbar-top">
         <nav class="navbar navbar-dark navbar-expand-sm">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <p>NavBar</p>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="col-sm-2 nav-left">
+                    <div>
+                        <a class="navbar-brand " href="index.html">
+                            <p>NavBar</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </div>
 
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li>
-                            <form action="" id="search-box">
-                                <input type="text" id="search-text" placeholder="Tìm Con C*c gì tìm lẹ lên">
-                                <button id="search-btn"><i class="fas fa-search"></i></button>
-                            </form>
-                        </li>
+                <div class="col-sm-7 nav-fill">
+                    <form action="" id="search-box" style="width: 100%;">
+                        <input style="width:90%" type="text" id="search-text" placeholder="Tìm Con C*c gì tìm lẹ lên">
+                        <button id="search-btn" style="width: 10%;"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <div class="collapse navbar-collapse nav-right col-sm-5" id="Navbar">
+                    <ul class="navbar-nav col-sm-3">
                         <li class="nav-item active"><a class="nav-link" href="./index.html"> Home </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> Product </a></1i>
+                        <li class="nav-item"><a class="nav-link" href="./product.html"> Product </a></1i>
                         <li class="nav-item"><a class="nav-link" href="#"> Cart</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> Login</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#"> Login</a></li> -->
+                        <div class="sub-menu-nav row">
+                            <ul>
+                                <li>
+                                    <label href="#" for="btn">Producta
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-1">Productb
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-1">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-2">Productc
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-2">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-3">Productd
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-3">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-4">Producte
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-4">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="navbar-top-tablet">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <div class="container">
+                <div class="col-sm-2 nav-left">
+                    <div class="container ml-auto">
+                        <a class="navbar-brand " href="index.html">
+                            <p>NavBar</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-4 nav-fill">
+                    <form action="" id="search-box" style="width: 100%;">
+                        <input style="width:90%" type="text" id="search-text" placeholder="Tìm Con C*c gì tìm lẹ lên">
+                        <button id="search-btn" style="width: 10%;"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <div class="collapse navbar-collapse nav-right col-sm-6" id="Navbar">
+                    <ul class="navbar-nav col-sm-3">
+                        <li class="nav-item active"><a class="nav-link" href="./index.html"> Home </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./product.html"> Product </a></1i>
+                        <li class="nav-item"><a class="nav-link" href="#"> Cart</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#"> Login</a></li> -->
+                        <div class="sub-menu-nav row">
+                            <ul>
+                                <li>
+                                    <label href="#" for="btn">Producta
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-1">Productb
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-1">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-2">Productc
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-2">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-3">Productd
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-3">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-4">Producte
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-4">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -156,7 +324,7 @@
             <div class="left-menu col-sm-2 order-first">
                 <ul>
                     <li>
-                         <a href="">Producta</a>
+                        <a href="">Producta</a>
                         <ul class="sub-menu">
                             <li><a href="">product 1</a></li>
                             <li><a href="">product 2</a></li>
@@ -198,7 +366,7 @@
                     </li>
                 </ul>
             </div>
-            
+
         </div>
 
 

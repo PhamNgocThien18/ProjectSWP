@@ -2,6 +2,7 @@
 /* page chung */
 .navbar{
     background-color: black;
+    
 }
 .navbar{
     display: block;
@@ -11,6 +12,13 @@
 .navbar-top p{
     font-size: 30px;
     padding-top: 20px;
+}
+.navbar-top-tablet p{
+    font-size: 30px;
+    padding-top: 20px;
+}
+.navbar-top-tablet{
+    display: none;
 }
 footer h2{
     padding: 30px 0px;
@@ -23,18 +31,24 @@ footer h2{
 
 #search-box{
     margin-top: 10px;
+    width: 100%;
 }
 #search-btn{
     border: none;
     padding: 3px 10px;
     background: none;
     color: white;
+    font-size: 20px;
+    float: right;
 }
 #search-box #search-text{
     border: none;
     background: #f3f3f3;
     padding: 3px 60px;
     border-radius: 5px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: red;
 }
 /* end */
 
@@ -49,9 +63,6 @@ footer h2{
 .product li{
     box-sizing: border-box;
     margin-bottom: 30px;
-}
-.product{
-    /* position: relative; */
 }
 .product-item{
     margin-left: auto;
@@ -183,9 +194,11 @@ li:hover .product-img img{
     top: -2px;
     left: 195px;
     display: none;
+    transition: 0.25s ease-in-out;
 }
 .left-menu ul li:hover .sub-menu{
     display: block;
+    
 }
 .left-menu>ul>li:hover {
     background-color: black;
@@ -204,3 +217,78 @@ li:hover .product-img img{
     background-color: red; 
 }
 /* end */
+
+/* Mobile */
+.sub-menu-nav ul li a{
+    text-decoration: none;
+    color: #f3f3f3;
+    
+}
+.sub-menu-nav li {
+    list-style: none;
+}
+@media screen and (max-width : 599px){
+    .nav-left button{
+        float: right;
+        margin: 25px 0px;
+    }
+    .left-menu {
+        display: none;
+    }   
+    /* .navbar-top .navbar-nav .sub-menu-nav{
+        display: none;
+    } */
+
+    .sub-menu-nav .sub-menu-mobile{
+        display: none;
+    }
+
+    .sub-menu-nav input{
+        display: none;
+    }
+    label{
+        display: block;
+        padding: 18px 20px;
+        font-size: 30px;
+        color: rgba(255,255,255,.5);
+        width: 100%;
+    }
+    .sub-menu-nav ul li label:hover {
+        color: red;
+    }
+
+
+    [id^=btn]:checked + .sub-menu-mobile{
+        display: block;
+    }
+
+    .sub-menu-nav ul li span{
+        float: right;
+    }
+
+    .sub-menu-mobile{
+        transition: 0.25s ease-in-out;
+    }
+
+    /* #search-text {
+        display: none;
+    } */
+
+    /* .menu .row{
+       width: 100%;
+       margin: 0;
+    } */
+}
+@media screen and (min-width : 600px) {
+    .sub-menu-nav ul li{
+        display: none;
+    }
+}
+@media screen and (min-width : 600px) and (max-width : 1024px){
+    .navbar-top-tablet {
+        display: block;
+    }
+    .navbar-top {
+        display: none;
+    }
+}

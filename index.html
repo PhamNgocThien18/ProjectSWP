@@ -23,25 +23,75 @@
     <div class="navbar-top">
         <nav class="navbar navbar-dark navbar-expand-sm">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <p>NavBar</p>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <div class="col-sm-2 nav-left">
+                    <div>
+                        <a class="navbar-brand " href="index.html">
+                            <p>NavBar</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-7 nav-fill">
+                    <form action="" id="search-box" style="width: 100%;">
+                        <input style="width:90%" type="text" id="search-text" placeholder="Tìm Con C*c gì tìm lẹ lên">
+                        <button id="search-btn" style="width: 10%;"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li>
-                            <form action=""id="search-box">
-                                <input type="text" id="search-text"
-                                 placeholder="Tìm Con C*c gì tìm lẹ lên">
-                                 <button id="search-btn"><i class="fas fa-search"></i></button>
-                            </form>
-                        </li>
+                </button> -->
+
+                <div class="collapse navbar-collapse nav-right col-sm-5" id="Navbar">
+                    <ul class="navbar-nav col-sm-3">
                         <li class="nav-item active"><a class="nav-link" href="./index.html"> Home </a></li>
                         <li class="nav-item"><a class="nav-link" href="./product.html"> Product </a></1i>
                         <li class="nav-item"><a class="nav-link" href="#"> Cart</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> Login</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#"> Login</a></li> -->
+        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="navbar-top-tablet">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <div class="container">
+                <div class="col-sm-2 nav-left">
+                    <div class="container ml-auto">
+                        <a class="navbar-brand " href="index.html">
+                            <p>NavBar</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-4 nav-fill">
+                    <form action="" id="search-box" style="width: 100%;">
+                        <input style="width:90%" type="text" id="search-text" placeholder="Tìm Con C*c gì tìm lẹ lên">
+                        <button id="search-btn" style="width: 10%;"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <div class="collapse navbar-collapse nav-right col-sm-6" id="Navbar">
+                    <ul class="navbar-nav col-sm-3">
+                        <li class="nav-item active"><a class="nav-link" href="./index.html"> Home </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./product.html"> Product </a></1i>
+                        <li class="nav-item"><a class="nav-link" href="#"> Cart</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#"> Login</a></li> -->
+
                     </ul>
                 </div>
             </div>
@@ -202,13 +252,15 @@
 
             </div>
         </div>
+
+        <div class="product">
         <div class="container">
             <div class="row">
-                <h2>Sale Product</h2>
+                <h2>Hot Product</h2>
             </div>
-            <div class="product-list container">
+            <div class="product-top container">
                 <ul class="row ">
-                    <li class="col-6 col-sm-3">
+                    <li class="col-6 col-sm-3 product-list">
                         <div class="product-item">
                             <div class="product-img">
                                 <a>
@@ -328,7 +380,6 @@
 
             </div>
         </div>
-    </div>
 
     <footer>
         <div class="container">
