@@ -10,9 +10,16 @@ h1 h2 h3 h4 h5 h6{
     display: block;
     max-width: 100%;
     height: auto;
+    padding: 0;
+}
+.top-nav {
+    background-color: #F36E23;
+}
+.navbar-top{
+    background-color: #F36E23;
+    margin: 0;
 }
 .navbar-top p{
-    font-size: 30px;
     padding-top: 20px;
 }
 .navbar-top-tablet p{
@@ -71,6 +78,17 @@ footer h2{
 .nav-right{
     width: 100%;
     max-width: 100%;
+}
+.user-name{
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.navbar-top .user-info{
+    padding: 0;
+    max-height: 20px;
+}
+.dropdown-menu{
+    width: 100%;
 }
 /* end */
 
