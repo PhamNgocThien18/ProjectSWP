@@ -21,8 +21,37 @@
 
 <body>
     <div class="navbar-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light top-nav">
+                <div class="container-fluid justify-content-end">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle d-flex align-items-center user-info" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                        <img
+                          src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t1.6435-9/148200636_528659258096027_8966625421411191162_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dzMdGh7CUt4AX978A2p&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_T8cl7XJeQ7xnVIt7NSbBeFkMmZy_8FtaihBZKvwhxjw&oe=62BB3767" class="rounded-circle" height="22"
+                        >
+                        <p class="user-name">Thienpnse150137</p>
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                          <a class="dropdown-item" href="profile.html">My profile</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
         <nav class="navbar navbar-dark navbar-expand-sm">
             <div class="container">
+                <div class="row">
+                </div>
                 <div class="col-sm-2 nav-left">
                     <div>
                         <a class="navbar-brand " href="index.html">
@@ -36,24 +65,19 @@
                 </div>
 
                 <div class="col-sm-6 nav-fill">
-                    <form action="" id="search-box" style="width: 100%;">
-                        <input style="width:90%" type="text" id="search-text" placeholder="Tìm Con C*c gì tìm lẹ lên">
-                        <button id="search-btn" style="width: 10%;"><i class="fas fa-search"></i></button>
+                    <form action="" id="search-box">
+                        <div class="row search-box-wrapper">
+                            <input type="text" id="search-text" class="col-10" placeholder="Tìm Con C*c gì tìm lẹ lên">
+                            <button id="search-btn" class="col-2"><i class="fas fa-search"></i></button>
+                        </div>
                     </form>
                 </div>
 
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
-
                 <div class="collapse navbar-collapse nav-right col-sm-4" id="Navbar">
                     <ul class="navbar-nav col-sm-3">
-                        <li class="nav-item active"><a class="nav-link" href="./index.html"> Home </a></li>
-                        <li class="nav-item"><a class="nav-link" href="./product.html"> Product </a></1i>
-                        <li class="nav-item"><a class="nav-link" href="#"> Cart</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html"> Login</a></li>
-
-
+                        <li class="nav-item active nav-text-option"><a class="nav-link" href="./index.html"> Home </a></li>
+                        <li class="nav-item nav-text-option"><a class="nav-link" href="./product.html"> Product </a></1i>
+                        <li class="nav-item nav-text-option"><a class="nav-link" href="./cart.html"> Cart</a></li>
                     </ul>
                 </div>
             </div>

@@ -2,13 +2,15 @@ html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   width: 99%;
   min-height: 97vh;
-  background-color: #f2f3f5;
+  background-color: #F36E23;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,22 +18,14 @@ body {
 }
 
 .signin {
-  padding: 47px 60px;
+  display: flex;
+  padding: 47px 40px;
   background-color: #fff;
   width: 50%;
-  max-width: 500px;
+  max-width: 540px;
   border-radius: 30px;
 }
 
-.sigin-1.col-6 {
-  padding: 52px 50px;
-  /* background-color: #fff; */
-  background-image: linear-gradient(rgb(187, 53, 80), rgb(223, 166, 144), 
-  rgb(47, 47, 194));
-  width: 50%;
-  max-width: 500px;
-  border-radius: 30px;
-}
 
 .signin-heading {
   font-size: 40px;
@@ -42,7 +36,7 @@ body {
 }
 
 #signin-social {
-  padding: 1px 0 0 65px;
+  padding: 1px;
 }
 
 .signup-social-icon {
@@ -56,239 +50,100 @@ body {
   color: #4c6ff4;
   font-size: 30px;
 }
+
 .signup-social-text {
   display: block;
   margin: 0 auto;
 }
 
-/* Dropdown */
-.selectdiv {
-  position: relative;
-  /*Don't really need this just for demo styling*/
-  float: left;
-  min-width: 185px;
-  margin: 2px 90px;
+
+/* Login*/
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 5px 15px 4px 25px;
 }
 
-select::-ms-expand {
-  display: none;
+#loginbtn {
+  background-color: #4c6ff4;
+}
+#loginbtn:hover {
+  background-color: #F36E23;
 }
 
-.selectdiv:after {
-  content: "<>";
-  font: 17px "Consolas", monospace;
-  color: #333;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  right: 11px;
-  /*Adjust for position however you want*/
-
-  top: 18px;
-  padding: 0 0 2px;
-  border-bottom: 1px solid #999;
-  /*left line */
-
-  position: absolute;
-  pointer-events: none;
+.row {
+  display: contents;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-.selectdiv select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /* Add some styling */
-
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  height: 50px;
-  float: right;
-  margin: 5px 0px;
-  padding: 0px 24px;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #333;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  -ms-word-break: normal;
-  word-break: normal;
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
 }
 
-select.dropdown-select {
-  font-size: 20px;
-  margin: 16px 9px 9px 133px;
-  padding: 6px 40px 6px 40px;
+.form-group {
+  margin-bottom: 1rem;
 }
 
-/* Login Admin */
-.login-box {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* background: rgba(0, 0, 0, 0.5); */
-  /* box-shadow: 0 15px 25px rgb(0 0 0 / 60%); */
-  width: 400px;
-  padding: 20px 65px 12px 25px;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.login-box h2 {
-  margin: 0 0 0px;
-  padding: 0px;
-  color: #060606;
-  text-align: center;
-  font-size: 40px;
-}
-
-.login-box .user-box {
-  position: relative;
-}
-
-.login-box .user-box input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #100f0f;
-  margin-bottom: 11px;
-  border: none;
-  border-bottom: 1px solid #e31a1a;
-  outline: none;
-  background: transparent;
-}
-
-.login-box .user-box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #100f0f;
-  pointer-events: none;
-  transition: 0.5s;
-}
-
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #03e9f4;
-  font-size: 12px;
-}
-
-.login-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 2px 2px;
-  color: #03e9f4;
-  font-size: 11px;
-  text-decoration: none;
-  text-transform: uppercase;
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
   overflow: hidden;
-  transition: 0.5s;
-  margin-top: 6px;
-  letter-spacing: 4px;
-}
-
-.login-box a:hover {
-  background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 100px #03e9f4;
-}
-
-.login-box a span {
+  padding: 0;
   position: absolute;
+  width: 1px;
+}
+
+.form-control {
   display: block;
-}
-
-.login-box a span:nth-child(1) {
-  top: 0;
-  left: -100%;
   width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: btn-anim1 1s linear infinite;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #8f959e;
+  border-radius: 0;
+  -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-@keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-  50%,
-  100% {
-    left: 100%;
-  }
+#loginbtn,
+#guestlogin .btn {
+  height: 50px;
+  font-size: larger;
 }
 
-.login-box a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: 0.25s;
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
 }
 
-@keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-  50%,
-  100% {
-    top: 100%;
-  }
+.btn, .btn a {
+  border-radius: 5px;
+  border-style: solid;
 }
 
-.login-box a span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
+.btn-primary {
+  border: none;
+  color: #fff !important;
+  font-family: Open Sans;
+  padding: 0.4rem 1rem;
+}
+
+.btn-block {
+  display: block;
   width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: 0.5s;
 }
 
-@keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-  50%,
-  100% {
-    right: 100%;
-  }
+.rememberpass > label {
+  padding: 1px;
 }
-
-.login-box a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: 0.75s;
-}
-
-@keyframes btn-anim4 {
-  0% {
-    bottom: -100%;
-  }
-  50%,
-  100% {
-    bottom: 100%;
-  }
-}
-
-/* hr {
-  width: 21.5px;
-    height: 500px;
-    background-image: linear-gradient(crimson, lightsalmon, 
-  midnightblue);
-} */

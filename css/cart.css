@@ -33,7 +33,6 @@ body {
 a {
     color: #000;
     text-decoration: none;
-
     -webkit-transition: color .2s linear;
     -moz-transition: color .2s linear;
     -ms-transition: color .2s linear;
@@ -90,7 +89,6 @@ a:hover {
 #cart a {
     color: #53b5aa;
     text-decoration: none;
-
     -webkit-transition: color .2s linear;
     -moz-transition: color .2s linear;
     -ms-transition: color .2s linear;
