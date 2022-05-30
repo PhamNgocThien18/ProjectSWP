@@ -1,10 +1,12 @@
-/* Quy ước chung font-size 18px của nội dung và tiêu đề sẽ là thẻ h2 */
-/* page chung */
-.navbar{
-    background-color: #F36E23;
-    
+html a {
+   text-decoration: none;
+   color: black; 
+}
+h1 h2 h3 h4 h5 h6{
+    font-size: 30px;
 }
 .navbar{
+    background-color: #F36E23;
     display: block;
     max-width: 100%;
     height: auto;
@@ -17,46 +19,52 @@
     font-size: 30px;
     padding-top: 20px;
 }
+.nav-text-option{
+     font-size: 35px;
+     padding: 0px 10px;
+}
 .navbar-top-tablet{
     display: none;
 }
 footer h2{
     padding: 30px 0px;
 }
-#Navbar a{
+#navbar a{
     display: block;
     /* padding: 18px 20px; */
     font-size: 32px;
 }
-
-#search-box{
-    margin-top: 10px;
-    width: 100%;
+.search-box-wrapper{
     border: 1px solid white;
     border-radius: 5px;
 }
+#search-box{
+    margin-top: 10px;
+    width: 100%;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+}
+::placeholder{
+    padding: 0px 20px;
+}
 #search-btn{
     border: none;
-    /* padding: 3px 10px; */
+    padding: 3px 10px;
     background: none;
     color: white;
     font-size: 25px;
     float: right;
 }
-#search-box #search-text{
+#search-text{
     border: none;
     background: #f3f3f3;
     padding: 10px 0px;
     max-width: 100%;
-    width: 88%;
+   
 }
 .navbar-dark .navbar-nav .nav-link:hover {
     color: red;
 }
-.user3 iframe{
-    width: 100%;
-}
-
 .nav-fill{
     margin: 0;
 }
@@ -96,7 +104,7 @@ li form{
 .product-info{
     padding: 10px 0px;
 }
-.product a {
+.product a{
     display: block;
     text-decoration: none;
     font-size: 18px;
@@ -282,10 +290,6 @@ li:hover .product-img img{
     .left-menu {
         display: none;
     }   
-    /* .navbar-top .navbar-nav .sub-menu-nav{
-        display: none;
-    } */
-
     .sub-menu-nav .sub-menu-mobile{
         display: none;
     }
@@ -303,39 +307,42 @@ li:hover .product-img img{
     .sub-menu-nav ul li label:hover {
         color: red;
     }
-
-
     [id^=btn]:checked + .sub-menu-mobile{
         display: block;
     }
-
     .sub-menu-nav ul li span{
         float: right;
     }
-
     .sub-menu-mobile{
         transition: 0.25s ease-in-out;
     }
-
-    /* #search-text {
-        display: none;
-    } */
-
-    /* .menu .row{
-       width: 100%;
-       margin: 0;
-    } */
 }
-@media screen and (min-width : 575px) {
+@media screen and (min-width: 575px) {
     .sub-menu-nav ul li{
         display: none;
     }
 }
-@media screen and (min-width : 575px) and (max-width : 1024px){
+
+@media screen and (max-width: 1000px){
+    .nav-text-option{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 850px){
+    .nav-text-option{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 700px){
+    .nav-text-option{
+        font-size: 20px;
+    }
+}
+/* @media screen and (min-width : 575px) and (max-width : 1024px){
     .navbar-top-tablet {
         display: block;
     }
     .navbar-top {
         display: none;
     }
-}
+} */
