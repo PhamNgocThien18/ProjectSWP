@@ -5,6 +5,11 @@ body {
     overflow-x: hidden;
 }
 
+.navbar-top {
+    background-color: #F36E23;
+    margin: -8px;
+}
+
 .clearfix {
     content: "";
     display: table;
